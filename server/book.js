@@ -5,7 +5,7 @@ var app = express();
 // app.use(express.static("./stone.html"));
 //方法2：使用fs.readFile打开html文件
 app.get('/', function (request, response) {
-  fs.readFile('./book.html' + request.path.substr(1), function (err, data) {
+  fs.readFile('./static/book.html' + request.path.substr(1), function (err, data) {
     if (err) {
       console.log(err); //404：NOT FOUND
       response.writeHead(404, {"Content-Type": "text/html"});

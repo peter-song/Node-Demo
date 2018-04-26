@@ -5,7 +5,7 @@ var app = express();
 // app.use(express.static("./stone.html"));
 //方法2：使用fs.readFile打开html文件
 app.get('/', function (request, response) {
-  fs.readFile('./stone.html' + request.path.substr(1), function (err, data) {
+  fs.readFile('./static/stone.html' + request.path.substr(1), function (err, data) {
     if (err) {
       console.log(err); //404：NOT FOUND
       response.writeHead(404, {"Content-Type": "text/html"});
@@ -16,6 +16,8 @@ app.get('/', function (request, response) {
     response.end();
   });
 });
+
+console.log(__dirname)
 app.listen(4001, function () {
   //监听http://127.0.0.1:3000端口
   console.log("server start 4001");
