@@ -17,5 +17,6 @@ router.use(responseTime(function (req, res, time) {
 }));
 
 router.get('/book/getBooks', controllers.book.getBooks);
+router.get('/book/getUsers', controllers.book.getUsers);
 
 module.exports = router;
