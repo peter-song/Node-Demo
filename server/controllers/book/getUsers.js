@@ -3,7 +3,7 @@
  */
 const mysql = require('../../persistent/mysql');
 
-const SELECT_BOOK = 'select * from user';
+const SELECT_BOOK = 'select * from userinfo';
 
 module.exports = (req, res, next) => {
 
