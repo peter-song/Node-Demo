@@ -19,6 +19,6 @@ app.use(function (err, req, res, next) {
   res.status(500).json(err);
 });
 
-app.listen(3000, function () {
-  console.log('Express server started on port 3000.');
+app.listen(3003, function () {
+  console.log('Express server started on port 3003.');
 });

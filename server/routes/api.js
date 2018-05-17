@@ -18,5 +18,6 @@ router.use(responseTime(function (req, res, time) {
 
 router.get('/book/getBooks', controllers.book.getBooks);
 router.get('/book/getUsers', controllers.book.getUsers);
+router.get('/spider/:id', controllers.spider.index);
 
 module.exports = router;
