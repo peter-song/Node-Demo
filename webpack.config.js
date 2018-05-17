@@ -53,9 +53,7 @@ const commonConfig = merge([
     ],
     resolve: {
       alias: {
-        images: path.resolve(__dirname, 'assets/img/'),
         app: path.resolve(__dirname, 'app/'),
-        theme: path.resolve(__dirname, 'app/theme'),
         utils: path.resolve(__dirname, 'app/utils/'),
         pages: path.resolve(__dirname, 'app/pages/'),
         config: path.resolve(__dirname, 'app/config'),

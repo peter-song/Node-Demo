@@ -7,6 +7,12 @@ const api = require('./routes/api');
 
 const app = express();
 
+// set view directory
+app.set('views', path.join(__dirname, 'views'));
+
+// use pug as view engine
+app.set('view engine', 'pug');
+
 app.use('/', api);
 
 // 404
